@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Learn.cpp">
+    <ClCompile Include="Inversion String.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>

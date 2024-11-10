@@ -16,14 +16,11 @@ int BinaireEnInt(std::string str) {
 }
 
 int main() {
-
     char input[] = "123546";
-	int longueur = strlen(input);
 	int x = 0;
-	int y = 0;
-    for (int i = 0; i < longueur; i++) {
 
-		y = BinaireEnInt(CharEnBinaire(input[i])); // recup 
+    for (int i = 0; i < strlen(input); i++) {
+		int y = BinaireEnInt(CharEnBinaire(input[i])); // recup 
 		x = x * 10 + y;
 	}
 	std::cout << "Le nombre entier correspondant est : " << x << std::endl;

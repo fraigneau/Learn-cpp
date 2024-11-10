@@ -127,10 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Learn.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Learn.h" />
+    <ClCompile Include="String en int.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
