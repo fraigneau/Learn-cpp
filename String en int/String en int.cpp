@@ -1,10 +1,9 @@
 #include <iostream>
 #include <string>
-#include <bitset>
 
 int main() {
 	int x = 0;
-	char input[] = "123";
+	char input[] = "123456";
 	if (strlen(input) == 0 && strlen(input) > 6) { return 1; }
     for (int i = 0; i < strlen(input); i++) {
 		if ((input[i] & 0x30) != 0x30) {
@@ -12,8 +11,7 @@ int main() {
 			return 2;
 		}
 		else {
-			int y = (input[i] & 0x0F);
-			x = x * 10 + y;
+			x = x * 10 + (input[i] & 0x0F);
 		}
     }
 	std::cout << "Le nombre entier correspondant est : " << x << std::endl;
